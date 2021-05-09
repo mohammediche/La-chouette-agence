@@ -1435,9 +1435,9 @@ img {
 .img-responsive,
 .thumbnail a>img,
 .thumbnail>img {
-    display: block;
-    max-width: 100%;
-    height: auto
+    /*display: block;*/
+    max-width: 80%;
+    height: 200px;
 }
 
 .img-rounded {
@@ -5023,8 +5023,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-collapse {
-    padding-right: 15px;
-    padding-left: 15px;
     overflow-x: visible;
     -webkit-overflow-scrolling: touch;
     border-top: 1px solid transparent;

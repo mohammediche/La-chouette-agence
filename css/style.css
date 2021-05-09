@@ -14,11 +14,7 @@ button {
     transition: all .3s ease-in-out;
     outline: none!important;
 }
-a,
-button:hover
-{
-    transform: scale(1.2);
-}
+
 
 
 
@@ -40,7 +36,7 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -51,7 +47,7 @@ a:hover {
 
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 100px 0px;
 }
 
 .bloc-md {
@@ -60,7 +56,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 0px;
+    padding: 20px 20px;
 }
 
 .bg-center,
@@ -230,7 +226,32 @@ em
     margin: auto;
     text-align: center;
     font-weight: 400;
+
 }
+/*** H4 ***/
+h4
+{
+    font-size: 25px;
+}
+
+.trois-h2
+{
+     width: 40%;
+    margin: auto;
+    font-weight: 400;
+}
+.second-h2
+{
+    font-size: 25px;
+}
+
+P.text-center.white
+{
+    margin: 0;
+    padding: 0!important;
+}
+
+
 
 /**********Media pour H2 et citation*************/
 @media screen and (max-width: 768px )
@@ -241,9 +262,23 @@ em
     .citation-importante{
         width: 100%;
     }
+    .trois-h2
+    {
+        width: 90%;
+    }
 }
 
-
+/******MAIN*******/
+main h3
+{
+    margin-bottom: 0;
+}
+/*******H2 size avant le footer****/
+h2.mg-md.text-center.tc-white.col-sm-12
+{
+    font-size: 26px;
+    font-weight: 500;
+}
 
 
 
@@ -320,19 +355,13 @@ nav .caret {
     float: right;
 }
 
-.mg-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
+
 
 .mg-lg {
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
-.btn {
-    margin: 0 5px 5px 0;
-}
 
 .btn.pull-right {
     margin: 0 0 5px 5px;
@@ -439,6 +468,7 @@ a[data-lightbox]:hover::before {
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+    right: 42%;
 }
 
 a[data-lightbox]:hover img {
@@ -461,16 +491,13 @@ a[data-lightbox]:hover img {
 #lightbox-modal .modal-dialog img {
     max-height: 90vh;
     margin: 0 auto;
+    display: flex;
 }
 
 .lightbox-caption {
     padding: 20px;
     color: #FFF;
     background: rgba(0, 0, 0, .5);
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 5px;
 }
 
 .close-lightbox {
@@ -516,14 +543,14 @@ a[data-lightbox]:hover img {
     left: 25px;
 }
 
-.snapshot-lb .modal-body {
-    padding-bottom: 45px;
-}
 
 .snapshot-lb .lightbox-caption {
     padding: 0;
     color: rgba(0, 0, 0, .5);
     background: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 h1,
@@ -575,11 +602,17 @@ a {
     margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    
+    font-size: 15px;
     font-weight: 700;
     background-color: #F3976C;
 }
+.cta-hero:hover
+{
+    transform: scale(1.2);
+}
+
+
 
 .social {
     max-width: 400px;
@@ -616,6 +649,7 @@ h3 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    margin-top: 40px;
 }
 
 .portfolio-row {
@@ -635,9 +669,16 @@ h3 {
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
+    color: #4A4C50;
+    background-color: blanchedalmond;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
-
-
+.bold-link:hover
+{
+    color: #ffb008;
+}
 
 .bgc-dark-slate-blue {
     background-color: #364577;
@@ -719,7 +760,6 @@ h3 {
     }
     h1,
     h3,
-    h4,
     h5,
     h6,
     p,
