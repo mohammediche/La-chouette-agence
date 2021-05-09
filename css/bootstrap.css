@@ -1406,13 +1406,13 @@ textarea {
 }
 
 a {
-    color: #337ab7;
+    color: black;
     text-decoration: none
 }
 
 a:focus,
 a:hover {
-    color: #23527c;
+    color: #0065bf;    
     text-decoration: underline
 }
 
@@ -1507,7 +1507,6 @@ h4,
 h5,
 h6 {
     font-family: inherit;
-    font-weight: 500;
     line-height: 1.1;
     color: inherit
 }
@@ -1545,7 +1544,6 @@ h6 small {
 .h2,
 .h3,
 h1,
-h2,
 h3 {
     margin-top: 20px;
     margin-bottom: 10px
@@ -1566,15 +1564,6 @@ h3 small {
     font-size: 65%
 }
 
-.h4,
-.h5,
-.h6,
-h4,
-h5,
-h6 {
-    margin-top: 10px;
-    margin-bottom: 10px
-}
 
 .h4 .small,
 .h4 small,
@@ -1596,34 +1585,6 @@ h1 {
     font-size: 36px
 }
 
-.h2,
-h2 {
-    font-size: 30px
-}
-
-.h3,
-h3 {
-    font-size: 24px
-}
-
-.h4,
-h4 {
-    font-size: 18px
-}
-
-.h5,
-h5 {
-    font-size: 14px
-}
-
-.h6,
-h6 {
-    font-size: 12px
-}
-
-p {
-    margin: 0 0 10px
-}
 
 .lead {
     margin-bottom: 20px;
@@ -1979,29 +1940,12 @@ pre code {
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto
 }
 
-@media (min-width:768px) {
-    .container {
-        width: 750px
-    }
-}
 
-@media (min-width:992px) {
-    .container {
-        width: 970px
-    }
-}
 
-@media (min-width:1200px) {
-    .container {
-        width: 1170px
-    }
-}
 
 .container-fluid {
     padding-right: 15px;
@@ -2010,10 +1954,6 @@ pre code {
     margin-left: auto
 }
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px
-}
 
 .col-lg-1,
 .col-lg-10,
@@ -4850,7 +4790,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a:focus,
 .nav>li>a:hover {
     text-decoration: none;
-    background-color: #eee
+    background-color: #F4F4F4;
+    border-radius: 20px;
 }
 
 .nav>li.disabled>a {
@@ -5248,11 +5189,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin: 7.5px -15px
 }
 
-.navbar-nav>li>a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 20px
-}
+
 
 @media (max-width:767px) {
     .navbar-nav .open .dropdown-menu {
@@ -5285,10 +5222,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
     .navbar-nav>li {
         float: left
-    }
-    .navbar-nav>li>a {
-        padding-top: 15px;
-        padding-bottom: 15px
     }
 }
 
