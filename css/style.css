@@ -60,6 +60,11 @@ a:hover {
     background-color: #8A330A;
     height: 250px;
 }
+.bloc-sm-contact{
+    padding: 20px 20px;
+    background-color: #8A330A;
+    height: auto;
+}
 
 .bg-center,
 .bg-l-edge,
@@ -127,7 +132,7 @@ a:hover {
 .navbar {
     margin-bottom: 20px;
     z-index: 1;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .navbar-brand {
@@ -153,31 +158,41 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
     float: right;
     z-index: 1;
+    display: flex;
 }
 
 .nav > li {
     
-    
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px;
+    list-style-type: none;
 }
+.padding-contact li
+{
+    padding: 10px 40px 10px 10px;
+}
+
+.padding-contact li a:focus,
+.padding-contact li a:hover
+{
+    text-decoration: none;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    color: #3471EE;
+}
+
 .nav > li a{
     font-weight: bold;
+    color: black;  
+    padding: 10px 15px;
 
 }
-
-
-
-
-
-
-
-
-
-
+a
+{
+    text-decoration: none;
+}
 
 
 
@@ -190,11 +205,26 @@ a:hover {
     display: flex;
     flex-direction: column;
     margin: 10px;
-    width: 40%;
+    width: 550px;
+    margin: auto;  
 }
+.bloc-button
+{
+    width: 550px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+form
+{
+    text-align: center;
+}
+
 label
 {
+    padding-top: 20px;
     padding-bottom: 5px;
+    font-weight: bold;
 }
 .form-control:focus 
 {
@@ -293,7 +323,58 @@ footer
 }
 
 
+/*********Page2**************/
+.navbar-contact
+{
+    margin-bottom: 20px;
+    z-index: 1;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.col-sm-12 p
+{
+    text-align: center;
+}
 
+/**********FOOTER*************/
+.footer-group
+{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-group ul li
+{
+    line-height: 2em;
+    color: white;
+}
+.fa
+{
+    color: black;
+}
+.footer-group ul
+{
+    display: flex;
+    flex-direction: column;
+}
+.footer-group h2
+{
+    color: #ffb008;
+}
+.icon-footer
+{
+    text-align: center;
+}
+.icon-footer div
+{
+    padding-bottom: 15px;
+}
+
+/*HOVER**/
+.calor-twitter:hover 
+{
+    color: #00acee;
+}
 
 
 
@@ -301,11 +382,12 @@ footer
 
 @media (min-width: 768px) {
     .site-navigation {
-        position: absolute;
+        /*position: absolute;
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);*/
+        display: flex;
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
@@ -587,6 +669,7 @@ a {
 
 .hero-bloc-text {
     font-size: 38px;
+    text-align: center;
 }
 
 .hero-bloc-text-sub {
@@ -624,9 +707,10 @@ a {
     font-weight: 700;
     background-color: #8A330A;
 }
-.cta-hero:hover
+.cta-hero:hover,
+.cta-hero:focus
 {
-    transform: scale(1.2);
+    transform: scale(1.09);
 }
 
 
@@ -792,6 +876,7 @@ h3 {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
+        display: block;
     }
     .navbar.row {
         margin-left: 0;

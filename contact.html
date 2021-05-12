@@ -31,33 +31,41 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
+<header>
 <div class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container">
-		<nav class="navbar row">
+		<nav class="navbar-contact row">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Logo de l'agence,la chouette agence" height="40" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					<span class="sr-only">Toggle navigation</span>
+					<!--<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>-->
+					<span><i class="fas fa-bars fa-2x"></i></span> 
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
+				<ul class="padding-contact site-navigation nav navbar-nav">
+					<li>
+						<a href="index.html#metiers">Métiers</a>
+					</li>
+					<li>
+						<a href="index.html#realisations">Réalisations</a>
+					</li>
 					<li>
 						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-					</li>
-					<li>
-						<a href="page2.html">page2 &gt;</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
 </div>
+</header>
 <!-- bloc-0 END -->
 
 <!-- bloc-6 -->
+<section>
 <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 	<div class="container bloc-lg">
 		<div class="row">
@@ -73,6 +81,7 @@
 		</div>
 	</div>
 </div>
+</section>
 <!-- bloc-6 END -->
 
 <!-- bloc-7 -->
@@ -97,23 +106,18 @@
 						<label for="information">
 							Comment avez-vous connu la chouette agence ?
 						</label>
-						<input class="form-control" type="email" required id="information" />
+						<input class="form-control" type="email" required id="information" placeholder="(exemple: sur nos réseaux sociaux, bouche à oreilles, etc...)" />
 					</div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label><textarea id="message" class="form-control" rows="4" cols="50" required placeholder="Parlez-nous de votre projet"></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
 				</form>
-			</div>
-			<div class="col-sm-6">
-				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-				</p>
-		</div>
+			</div>			
 </div>
 <!-- bloc-7 END -->
 
@@ -124,36 +128,70 @@
 
 <!-- Footer - bloc-8 -->
 <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
+	<div class="container bloc-sm-contact">
 			<div class="col-sm-12">
 				<p class="text-center white">
-					La chouette agence - Agence web basée à Lyon.<br>
+					La chouette agence - Agence web basée à Lyon.
 				</p>
-				<div class="row row-no-gutters social">
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
-						</div>
-					</div>
-				</div>
+                <div class="footer-group">
+                	<div>
+                	   <h2>NOS SERVICES</h2>
+                	   <ul>
+                		  <li>WEB DESIGN</li>
+                		  <li> STRATÉGIE</li>
+                		  <li>ILLUSTRATIONS</li>
+                	   </ul>
+                	</div>
+
+                	<div>
+                	   <h2>RESTER EN CONTACT</h2>
+                	   <ul>
+                		  <li>contact@lachouetteagence.com</li>
+                		  <li> 2 place Sathonay 69001 Lyon</li>
+                	   </ul>
+                	</div>
+
+                	<div>
+                	   <h2>LES HORAIRES</h2>
+                	   <ul>
+                		  <li>✅lun 9h-18h</li>
+                		  <li>✅mar 9h-18h</li>
+                		  <li>✅mer 9h-18h</li>
+                		  <li>✅jeu 9h-18h</li>
+                		  <li>✅ven 9h-18h</li>
+                		  <li>❌sam 9h-18h</li>
+                		  <li>❌dim 9h-18h</li>
+                	   </ul>
+                	</div>
+
+                	<div>
+                	   <h2>NOS RÉSEAUX</h2>
+                	   <div class="icon-footer">
+                		  
+                		  	<div class="color-twitter">
+                		  		<a href="https://www.twitter.com/" aria-label="Twitter"> 
+                		  		<i class="fa fa-twitter icon-md"></i></a>	
+                		  	</div>
+                		 
+                		  
+                		  	<div>
+                		  	    <a href="https://www.facebook.com/" aria-label="Facebook">
+                		  	    <i class="fa fa-facebook icon-md"></i></a>	
+                		    </div>
+                		  
+                		  	<div >
+                		  	    <a href="https://www.dribbble.com/" aria-label="Dribbble"> 
+                		  		<i class="fa fa-dribbble icon-md"></i></a>	
+                		    </div>
+                		  
+                		  	<div>
+                		  	    <a href="https://www.instagram.com/" aria-label="Instagram"> 
+                		  	    <i class="fa fa-instagram icon-md"></i></a>	
+                		    </div>
+                	   </div>
+                	</div>
+                </div>
 			</div>
-		</div>
 	</div>
 </div>
 <!-- Footer - bloc-8 END -->
@@ -161,6 +199,6 @@
 </div>
 <!-- Principal conteneur END -->
     
-
+<script src="https://kit.fontawesome.com/78eeed9376.js" crossorigin="anonymous"></script>
 </body>
 </html>

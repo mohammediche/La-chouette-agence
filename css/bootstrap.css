@@ -1436,8 +1436,9 @@ img {
 .thumbnail a>img,
 .thumbnail>img {
     /*display: block;*/
-    max-width: 80%;
+    width: 80%;
     height: 200px;
+    object-fit: contain;
 }
 
 .img-rounded {
@@ -4784,7 +4785,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 10px 15px
+    padding: 10px 15px;
 }
 
 .nav>li>a:focus,
@@ -4792,6 +4793,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     text-decoration: none;
     background-color: #F4F4F4;
     border-radius: 20px;
+    color: #3471EE;
 }
 
 .nav>li.disabled>a {
