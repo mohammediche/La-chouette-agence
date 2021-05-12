@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="img/favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
     <title>contact</title>
@@ -89,7 +89,7 @@
 	<div class="container bloc-lg">
 		
 			
-				<form id="form_1" success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1">
 					<div class="form-group">
 						<label for="name">
 							Nom
@@ -117,7 +117,7 @@
 						Envoyer
 					</button>
 				</form>
-			</div>			
+	</div>			
 </div>
 <!-- bloc-7 END -->
 
@@ -127,6 +127,7 @@
 
 
 <!-- Footer - bloc-8 -->
+<footer>
 <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm-contact">
 			<div class="col-sm-12">
@@ -146,7 +147,7 @@
                 	<div>
                 	   <h2>RESTER EN CONTACT</h2>
                 	   <ul>
-                		  <li>contact@lachouetteagence.com</li>
+                		  <li><a class="mail-footer" href="mailto:contact@lachouetteagence.com"> contact@lachouetteagence.com </a></li>
                 		  <li> 2 place Sathonay 69001 Lyon</li>
                 	   </ul>
                 	</div>
@@ -168,37 +169,43 @@
                 	   <h2>NOS RÉSEAUX</h2>
                 	   <div class="icon-footer">
                 		  
-                		  	<div class="color-twitter">
-                		  		<a href="https://www.twitter.com/" aria-label="Twitter"> 
-                		  		<i class="fa fa-twitter icon-md"></i></a>	
-                		  	</div>
-                		 
-                		  
-                		  	<div>
-                		  	    <a href="https://www.facebook.com/" aria-label="Facebook">
-                		  	    <i class="fa fa-facebook icon-md"></i></a>	
-                		    </div>
-                		  
-                		  	<div >
-                		  	    <a href="https://www.dribbble.com/" aria-label="Dribbble"> 
-                		  		<i class="fa fa-dribbble icon-md"></i></a>	
-                		    </div>
-                		  
-                		  	<div>
-                		  	    <a href="https://www.instagram.com/" aria-label="Instagram"> 
-                		  	    <i class="fa fa-instagram icon-md"></i></a>	
-                		    </div>
+                		    <a href="https://www.twitter.com/" aria-label="Twitter">
+						   <div class="icon-center-footer">
+							 <span class="fa fa-twitter icon-md"></span>
+						   </div>
+						</a>   
+					</div>
+					<div>
+						<a href="https://www.facebook.com/" aria-label="Facebook">
+						   <div class="icon-center-footer">
+							  <span class="fa fa-facebook icon-md"></span>
+						   </div>
+						</a>   
+					</div>
+					<div>
+						<a href="https://www.dribbble.com/" aria-label="Dribbble">
+						   <div class="icon-center-footer">							
+								<span class="fa fa-dribbble icon-md"></span>							
+						   </div>
+						</a>  
+					</div>
+					<div >
+						<a href="https://www.instagram.com/" aria-label="Instagram">
+							<div class="icon-center-footer">
+							  <span class="fa fa-instagram icon-md"></span>
+						    </div> 
+					    </a>
                 	   </div>
                 	</div>
                 </div>
 			</div>
 	</div>
 </div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
 </div>
 <!-- Principal conteneur END -->
-    
-<script src="https://kit.fontawesome.com/78eeed9376.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/78eeed9376.js" crossorigin="anonymous"></script>
 </body>
 </html>

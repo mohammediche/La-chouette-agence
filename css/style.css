@@ -218,6 +218,10 @@ a
 form
 {
     text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
 label
@@ -329,8 +333,7 @@ footer
     margin-bottom: 20px;
     z-index: 1;
     margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    
 }
 .col-sm-12 p
 {
@@ -361,32 +364,52 @@ footer
 {
     color: #ffb008;
 }
-.icon-footer
+.icon-center-footer
 {
     text-align: center;
+    padding-bottom: 10px;
 }
-.icon-footer div
+
+.mail-footer
 {
-    padding-bottom: 15px;
+    color: white;
+    text-decoration: underline;
 }
 
 /*HOVER**/
-.calor-twitter:hover 
-{
+
+.icon-center-footer:hover span{
     color: #00acee;
 }
 
 
 
 
+@media screen and (max-width: 900px )
+{
+    .footer-group{
+        flex-direction: column;
+    }
+    .icon-center-footer{
+        text-align: left;
+        margin-left: 55px;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 580px )
+{
+    .form-group{
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+
 
 @media (min-width: 768px) {
     .site-navigation {
-        /*position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);*/
         display: flex;
     }
     .nav > li .dropdown-menu a,
@@ -668,7 +691,7 @@ a {
 
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 36px;
     text-align: center;
 }
 
@@ -699,7 +722,6 @@ a {
 }
 
 .cta-hero {
-    margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
     
@@ -839,9 +861,6 @@ h3 {
         overflow-x: hidden;
         position: relative;
     }
-    /*.bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);*/
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -850,8 +869,6 @@ h3 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        /*padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);*/
     }
 }
 
